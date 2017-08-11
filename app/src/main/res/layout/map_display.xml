@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.esri.android.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:weightSum="2"
+            android:padding="5dp">
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Latitude"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/light_gray"
+            android:layout_margin="1dp"
+            />
+         <TextView
+             android:id="@+id/log"
+             android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Longitude"
+              android:gravity="center"
+             android:textStyle="bold"
+              android:background="@color/light_gray"
+             android:layout_margin="1dp"
+          />
+        </LinearLayout>
+
+    </com.esri.android.map.MapView>
+
+</LinearLayout>
